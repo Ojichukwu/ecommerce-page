@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+p,li{
+    color: gray;
+    font-size: 17px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem .8rem;
+}
+
+.nav-bar,.nav-bar> ul,.right-bar>ul{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-bar> ul li,.right-bar>ul li{
+    margin-left: 1rem;
+}
+.nav-bar> ul{
+ display: none;
+}
+
+.right-bar img{
+    max-width: 70%;
+}
+
+.icon{
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.icon1{
+    position: absolute;
+    top: 0px;
+    width: inherit;
+    height: 5px;
+    background-color: gray;
+}
+.icon2{
+    position: absolute;
+    top: 10px;
+    width: inherit;
+    height: 3px;
+    background-color: gray;
+}
+.icon3{
+    position: absolute;
+    top: 20px;
+    width: inherit;
+    height: 2px;
+    background-color: gray;
+}
+
+
+
+
+/* DISIGNING OF DESKTOP VIEW */
+@media only screen and (min-width: 500px){
+    .header-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem .8rem;
+        margin: 0 .5rem;
+        border-bottom: 1px solid gray;
+        opacity: 0.8;
+    }
+    .nav-bar> ul{
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        list-style-type: none;
+        cursor: pointer;
+    }
+    .nav-bar> ul li:hover{
+     border-bottom: 2px solid orangered;
+     padding: 2rem 0;
+     padding-top: -2rem;
+    }
+    .right-bar img{
+        max-width: 50%;
+    }
+    .icon{
+        display: none;
+    }
+
+    
+        
+ 
+}
